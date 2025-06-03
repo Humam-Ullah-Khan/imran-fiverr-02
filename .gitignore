@@ -1,0 +1,35 @@
+# Laravel & PHP
+/vendor/
+/node_modules/
+/storage/
+/.env
+/.env.*
+.phpunit.result.cache
+/public/storage
+/database/*.sqlite
+.idea/
+*.log
+.DS_Store
+Thumbs.db
+npm-debug.log
+composer.lock
+package-lock.json
+
+# Ignore system files
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore other common files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Ignore VSCode settings
+.vscode/

@@ -1,0 +1,290 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+.btn-dark{
+	background-color: var(--Primary);
+    border-color: var(--Primary);
+}
+/* .btn-danger{
+	background-color: var(--Secondary);
+    border-color: var(--Secondary);
+} */
+.topSec{
+	/*background: var(--Secondary);*/
+	background: #165261;
+}
+.gap{
+	gap: 10px;
+}
+.gap li a{
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+}
+.HeaderMenu{
+	background: #fff;
+}
+.HeaderMenu .navbar-light .navbar-nav .nav-link {
+    color: #000;
+	font-size: 17px;
+}
+.HeaderMenu li.nav-item.active a.nav-link{
+	color: var(--Primary);
+}
+.HeaderContent{
+	/* padding: 2rem 0; */
+	padding-bottom: 5rem;
+}
+.ContentInfo p{
+	font-size: 16px;
+}
+.ContentInfo h1{
+	font-family: 'Orbitron', sans-serif;
+}
+.OrderForm{
+	background: var(--Gray);
+	/* padding: 2rem 2rem; */
+	height: 100%;
+}
+.OrderForm .form-control{
+    font-size:10px;
+}
+
+.AboutSec h3 span{
+	color: var(--Secondary);
+}
+
+
+.OurWork h3 span , .OurServices h3 span , .ReasonSec h3 span , .satisfied h3 span , .affordableSec h3 span{
+	color: var(--Secondary);
+}
+
+.OurWork .nav-tabs .nav-link{
+	background: var(--White);
+	margin: 0px 3px;
+}
+.OurWork .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+	background: var(--Secondary);
+	color: #fff;
+}
+.itemBox{
+	position: relative;
+	margin: 1rem 0;
+}
+.overlay{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--Light);
+	color: #fff;
+	opacity: 0;
+	transition: .2s linear;
+	cursor: pointer;
+}
+.overlay p{
+	font-size: 1.7rem;
+}
+.itemBox:hover .overlay{
+	opacity: 1;
+}
+.serviceBox{
+	position: relative;
+}
+.overlayBox{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: end;
+	align-items: left;
+	background: var(--Light);
+	color: #fff;
+	opacity: 0;
+	transition: .2s linear;
+	cursor: pointer;
+	flex-direction: column;
+	padding: 1rem 1rem;
+}
+.serviceBox img{
+	width: 100%;
+}
+.serviceBox:hover .overlayBox{
+	opacity: 1;
+}
+.overlayBox p{
+	font-size: 14px;
+}
+
+/* .ReasonSec{
+	background: var(--skyBlue);
+} */
+
+.ReasonItems{
+	display: flex;
+	gap: 15px;
+}
+
+.OurServices{
+	/*background: url("assets/img/background-shape.webp");*/
+}
+
+.differntDigitize h3{
+	color: var(--Secondary);
+}
+.differntDigitize h5{}
+.differntDigitize p{
+	font-size: 14px;
+}
+
+.affordableSec{
+	background: var(--skyBlue);
+}
+.ReviewBox {
+    padding: 1.4rem;
+    background: var(--skyBlue);
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    margin: 3rem 0;
+    margin-top: 0;
+}
+.icon {
+    font-size: 3rem;
+}
+.ClientCounter{
+	background: var(--skyBlue);
+}
+.ClientCounter h3{
+	color: var(--Secondary);
+}
+.ClientCounter h4{
+	font-size: 19px;
+}
+.ReviewBox i{
+	position: absolute;
+    font-size: 4rem;
+    bottom: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 16px;
+    color: var(--Secondary);
+}
+.infoLink a{
+	display: block;
+	color: var(--White);
+	text-decoration: none;
+	padding: 5px 0;
+}
+.infoLink ul{
+	gap: 18px;
+}
+.FooterSec {
+    /*background: var(--Secondary);*/
+    background: #165261;
+}
+.infoLink h3 {
+    color: var(--White);
+}
+.infoLink h4{
+	color: var(--White);
+}
+
+.infoLink ul li a{
+	font-size: 25px;
+}
+.copyRightSec{
+	background: #165261;
+}
+.copyRightSec p{
+	color: var(--White);
+}
+a.TypeOrder.active{
+	background:var(--Primary);
+}
+.BoxLayout{
+	background: var(--White);
+}
+.BoxLayout i {
+    font-size: 4rem;
+    color:var(--Secondary);
+}
+.OrderDetails{
+	background: var(--White);
+}
+.ordersummary {
+    position: sticky;
+    top: 153px;
+    border: 1px solid #3333;
+    padding: 20px 35px;
+    border-radius: 20px;
+    background: #f9f9f9;
+}
+.ordersummary h3 {
+    font-size: 22px;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+.ordersummary hr {
+    margin: 8px 0;
+}
+.academic_paper h4 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+.academic_paper ul {
+    margin: 0;
+    list-style: none;
+}
+.academic_paper ul li {
+    font-size: 14px;
+    padding: 5px 0;
+    display: block;
+}
+.basic_price {
+    width: 100%;
+    padding: 15px 0;
+}
+.basic_price h4 {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+.basic_price ul {
+    margin: 0;
+    list-style: none;
+}
+.basic_price ul li {
+    font-size: 14px;
+    padding: 5px 0;
+    display: block;
+}
+.basic_price ul li.borderdata {
+    border-top: 1px solid #dee2e6;
+}
+.custom-bg{
+    background-color: #53b6d0;
+    background: #53b6d0;
+}
+.teal-btn{
+    background-color: #53b6d0;
+    border-color: #53b6d0;
+    color: #fff;
+}
+a{
+    color: #53b6d0;
+}
