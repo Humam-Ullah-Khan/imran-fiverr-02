@@ -23,8 +23,8 @@
     content="Get high-quality embroidery digitizing services at Digitizing Direct. Affordable pricing, quick turnaround, and premium designs tailored to your needs.">
 
   {{-- Css Links --}}
-  <link rel="stylesheet" href="{{ asset('mastersdigitizing-css/index.css') }}">
-  <link rel="stylesheet" href="{{ asset('mastersdigitizing-css/custom.css') }}">
+  <link rel="stylesheet" href="{{ asset('sitelayout-css/styles.css') }}">
+  <link rel="stylesheet" href="{{ asset('sitelayout-css/custom.css') }}">
 
   {{-- bootstrap --}}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -53,24 +53,13 @@
   <div class="HeaderSec">
 
     {{-- The Top Section --}}
-    <div class="topSec">
+    <div class="top-section d-md-block d-none">
 
       <div class="container-fluid">
 
         <div class="row px-md-4 align-items-center py-1">
 
           <div class="col">
-
-            {{-- <ul class="d-flex list-unstyled m-0 pt-2 pb-2 gap align-items-center">
-
-              <li class="wall"><a href="mailto:{{ $CmsData[0]->frontEmail }}"><i
-                    class="fa-solid fa-envelope mr-1 d-md-inline d-none"></i>
-                  {{ $CmsData[0]->frontEmail }}</a></li>
-
-              <li><a class="d-inline-block ml-2" href="tel:{{ $CmsData[0]->frontPhone }}"><i
-                    class="fa-solid fa-phone mr-1 d-md-inline d-none"></i>
-                  {{ $CmsData[0]->frontPhone }}</a></li>
-            </ul> --}}
 
             <ul class="d-flex list-unstyled m-0 pt-2 pb-2 gap align-items-center">
               @if (!empty($CmsData) && isset($CmsData[0]))
@@ -126,86 +115,87 @@
     </div>
 
 
-    {{-- Navbar --}}
-    <div class="HeaderMenu sticky-top">
-      <div class="container-fluid p-0 px-md-3">
-        <div class="row mx-3 mx-md-4 align-items-center py-3">
-          <div class="col-9 col-md-3 p-0">
-            <img src="{{ asset('mastersdigitizing-images/Logo.png') }}" alt="" class="" height="90px"
-              style="object-fit: cover">
-          </div>
-          <nav class="navbar navbar-expand-lg navbar-light col-3 col-md-6">
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navbar Section -->
+    <section class="Navbar_Section border-bottom sticky-top bg-white">
+      <div class="container p-0">
+        <nav class="navbar navbar-expand-lg p-0">
+          <div class="container-fluid p-0 p-2">
+            <a class="navbar-brand" href="#">
+              <img src="./sitelayout-images/LOGO.png" alt="Logo" width="100px" class="object-fit-contain" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-
-
-
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-              <ul class="navbar-nav mx-auto">
-
-                <li class="nav-item {{ request()->is('/') ? 'active ' : '' }}">
-                  <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+              <ul class="navbar-nav mx-auto gap-md-4 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"><i class="ri-home-9-fill"></i> Home</a>
                 </li>
-
-                <li class="nav-item {{ request()->is('about-us') ? 'active ' : '' }}">
-                  <a class="nav-link" href="{{ url('/about-us') }}">About Us</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-users-line"></i> About Us</a>
                 </li>
-
-                <li
-                  class="nav-item dropdown {{ request()->is('logo-digitizing') || request()->is('applique-digitizing') || request()->is('3d-puff-digitizing') || request()->is('embroidered-patches') || request()->is('vector-art-digitizing') || request()->is('jacket-back-digitizing') ? 'active ' : '' }}">
-
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" type="button"
-                    data-toggle="dropdown" aria-expanded="false">Our Services</a>
-
-                  <div class="dropdown-menu rounded-3 services-dropdown" aria-labelledby="navbarDropdown">
-
-                    <a class="dropdown-item {{ request()->is('logo-digitizing') ? 'active' : '' }}"
-                      href="{{ url('/logo-digitizing') }}">Logo Digitizing</a>
-
-                    <a class="dropdown-item {{ request()->is('applique-digitizing') ? 'active' : '' }}"
-                      href="{{ url('/applique-digitizing') }}">Applique
-                      Digitizing</a>
-
-                    <a class="dropdown-item {{ request()->is('3d-puff-digitizing') ? 'active' : '' }}"
-                      href="{{ url('/3d-puff-digitizing') }}">3D Puff Digitizing</a>
-
-                    <a class="dropdown-item {{ request()->is('embroidered-patches') ? 'active' : '' }}"
-                      href="{{ url('/embroidered-patches') }}">Embroidered
-                      Patches</a>
-
-                    <a class="dropdown-item {{ request()->is('vector-art-digitizing') ? 'active' : '' }}"
-                      href="{{ url('/vector-art-digitizing') }}">Vector Art
-                      Digitizing</a>
-
-                    <a class="dropdown-item {{ request()->is('jacket-back-digitizing') ? 'active' : '' }}"
-                      href="{{ url('/jacket-back-digitizing') }}">Jacket Back
-                      Digitizing</a>
-
-                  </div>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="ri-service-fill"></i> Services
+                  </a>
+                  <ul class="dropdown-menu p-1">
+                    <li>
+                      <a class="dropdown-item" href="#">3D Puff Digitizing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Applique Digitizing Service</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Cap Digitizing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Chenille Digitizing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Custom Embroidery Patches</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Jacket Back Digitizing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Logo Digitizing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Sleeve Digitizing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">T Shirt Embroidery Digitizing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Vector Artwork Conversion</a>
+                    </li>
+                  </ul>
                 </li>
-
-                <li class="nav-item {{ request()->is('pricing') ? 'active ' : '' }}">
-                  <a class="nav-link" href="{{ url('/pricing') }}">Pricing</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="fa-solid fa-tags"></i> Samples</a>
                 </li>
-
-                <li class="nav-item {{ request()->is('contact-us') ? 'active ' : '' }}">
-                  <a class="nav-link" href="{{ url('/contact-us') }}">Contact Us</a>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="ri-phone-fill"></i> Contant Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" href="javascript:;" data-toggle="modal" data-target="#SignInModal"><i class="ri-user-3-fill"></i> Sign In</a></li>
                 </li>
               </ul>
+              <!-- <div class="Navbar-btn">
+                <a
+                  href="#"
+                  class="btn btn-primary animate__animated animate__heartBeat animate__infinite animate__fast"
+                  >Get Qoutes</a
+                >
+              </div> -->
             </div>
-
-          </nav>
-          <div class="col-md-3 d-none d-md-flex align-items-center justify-content-end p-0">
-            <a href="/embroidery-digitizing" class="btn btn-success text-white  rounded-sm"> <i
-                class="fa-solid fa-cart-shopping mr-2"></i>Place an Order</a>
           </div>
-        </div>
+        </nav>
       </div>
-    </div>
+    </section>
 
   </div>
 
@@ -328,139 +318,172 @@
   @yield ('content')
 
 
-  {{-- Footer --}}
-  <div class="FooterSec pt-5 pb-5">
-
-    <div class="container-fluid px-4 px-md-5">
-
-      <div class="row">
-
-        <div class="col-md-4 ">
-          {{-- Need to change site log --}}
-
-          <img src="{{ asset('mastersdigitizing-images/logo-skeleton.png') }}"
-            style="filter: invert(1); width: 250px;" alt="" width="250">
-
-          <p class="text-white pt-3 w-md-75 w-100" style="text-align: justify;">Master Digitizing is committed to
-            provide creative, artistic and
-            custom embroidery digitizing and vector arts. With the team of passionate designers, we are
-            offering high quality online services to USA and international clients at inexpensive rates.
-          </p>
-
-        </div>
-
-        <div class="col-md-3 mb-md-0 mb-4">
-
-          <div class="infoLink">
-
-            <h3>Services</h3>
-
-            <a href="{{ url('/logo-digitizing') }}">Logo Digitizing <i
-                class="fa fa-arrow-right ml-2 drag-right-arrow"></i></a>
-
-            <a href="{{ url('/applique-digitizing') }}">Applique Digitizing <i
-                class="fa fa-arrow-right ml-2 drag-right-arrow"></i></a>
-
-            <a href="{{ url('/3d-puff-digitizing') }}">3D Puff Digitizing <i
-                class="fa fa-arrow-right ml-2 drag-right-arrow"></i></a>
-
-            <a href="{{ url('/embroidered-patches') }}">Embroidered Patches <i
-                class="fa fa-arrow-right ml-2 drag-right-arrow"></i></a>
-
-            <a href="{{ url('/vector-art-digitizing') }}">Vector Art Digitizing <i
-                class="fa fa-arrow-right ml-2 drag-right-arrow"></i></a>
-
-            <a href="{{ url('/jacket-back-digitizing') }}">Jacket Back Digitizing <i
-                class="fa fa-arrow-right ml-2 drag-right-arrow"></i></a>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-2 mb-md-0 mb-4">
-
-          <div class="infoLink">
-
-            <h3>Quick Links</h3>
-
-            <a href="{{ url('/') }}">Home <i class="fa fa-arrow-right ml-2 drag-right-arrow"></i></a>
-
-            <a href="{{ url('/about-us') }}">About Us <i class="fa fa-arrow-right ml-2 drag-right-arrow"></i></a>
-
-            <a href="{{ url('/pricing') }}">Pricing <i class="fa fa-arrow-right ml-2 drag-right-arrow"></i></a>
-
-            <a href="{{ url('/contact-us') }}">Contact <i class="fa fa-arrow-right ml-2 drag-right-arrow"></i></a>
-
-          </div>
-
-        </div>
-
-        <div class="col-md-3">
-
-          {{-- <div class="infoLink">
-            <h3>Contact Details</h3>
-            <a href="tel:{{ $CmsData[0]->frontPhone }}">{{ $CmsData[0]->frontPhone }}</a>
-            <a href="javascript:;">{{ $CmsData[0]->aboutTitle }}</a>
-            <a href="mailto:{{ $CmsData[0]->frontEmail }}">{{ $CmsData[0]->frontEmail }}</a> --}}
-
-          <div class="infoLink">
-            <h3>Contact Details</h3>
-            @if (!empty($CmsData) && isset($CmsData[0]))
-              <a href="tel:{{ $CmsData[0]->frontPhone }}">{{ $CmsData[0]->frontPhone }}</a>
-              <a href="javascript:;">{{ $CmsData[0]->aboutTitle }}</a>
-              <a href="mailto:{{ $CmsData[0]->frontEmail }}">{{ $CmsData[0]->frontEmail }}</a>
-            @else
-              <a href="#">Phone Not Available</a>
-              <a href="#">Title Not Available</a>
-              <a href="#">Email Not Available</a>
-            @endif
-
-
-
-            <h4 class="pt-4">Follow us</h4>
-
-            <ul class="d-flex list-unstyled">
-
-              <li><a href="javascript:;"><i class="fa-brands fa-facebook-f"></i></a></li>
-
-              <li><a href="javascript:;"><i class="fa-brands fa-instagram"></i></a></li>
-
-              <li><a href="javascript:;"><i class="fa-brands fa-twitter"></i></a></li>
-
-              <li><a href="javascript:;"><i class="fa-brands fa-whatsapp"></i></a></li>
-
-            </ul>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  {{-- The Last CopyRight Section --}}
-  <div class="copyRightSec pt-2 pb-2">
-
+  <footer class="footer-section pt-5 pb-3">
     <div class="container">
-
-      <div class="row">
-
-        <div class="col-12 text-center">
-
-          <p class="m-0">©2025 Master Digitizing Services. All Rights Reserved.</p>
-
+      <div class="row gy-4 align-items-start">
+        <!-- About -->
+        <div class="col-lg-3 col-md-6">
+          <img src="./sitelayout-images/LOGO.png" alt="Embroidery Digitizing Logo" width="120" class="mb-3" />
+          <p class="mb-3" style="color: #222">
+            Digitizers Online is the reliable source that visions the
+            digitizing industry for tomorrow and raises the bars of customer
+            experience, and quality.
+          </p>
+          <div class="mb-3">
+            <a href="#" class="me-2 text-dark"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="me-2 text-dark"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#" class="me-2 text-dark"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="me-2 text-dark"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="me-2 text-dark"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="me-2 text-dark"><i class="fab fa-tiktok"></i></a>
+          </div>
+          <div class="mb-2">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="ms-2">info@digitizersonline.com</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span class="ms-2">+1 929 201 3767</span>
+          </div>
         </div>
-
-        <div class="col"></div>
-
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Home</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>About Us</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Samples</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Contact Us</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Free Instant
+                Quote</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Reviews</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Sitemap</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Terms and
+                Condition</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Privacy
+                Policies</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Cancellation
+                Policy</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Refund Policy</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Blog</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Services</h5>
+          <ul class="list-unstyled footer-links">
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>3D Puff
+                Digitizing</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Applique
+                Digitizing</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Cap Digitizing</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Chenille
+                Digitizing</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Custom Embroidery
+                Patches</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Jacket Back
+                Digitizing</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Logo
+                Digitizing</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Sleeve
+                Digitizing</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>T Shirt
+                Embroidery Digitizing</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Vector Artwork
+                Conversion</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Latest Patches Carousel -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Our Latest Patches</h5>
+          <div class="footer-carousel position-relative">
+            <div id="footerPatchCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner rounded" style="background: #fff">
+                <div class="carousel-item active">
+                  <img src="./sitelayout-images/sample-01.png" class="d-block w-100 object-fit-cover" alt="Patch 1"
+                    style="margin: 0 auto" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./sitelayout-images/sample-02.png" class="d-block w-100" alt="Patch 2"
+                    style="margin: 0 auto" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./sitelayout-images/sample-03.png" class="d-block w-100" alt="Patch 3"
+                    style="margin: 0 auto" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./sitelayout-images/sample-04.png" class="d-block w-100" alt="Patch 4"
+                    style="margin: 0 auto" />
+                </div>
+                <div class="carousel-item">
+                  <img src="./sitelayout-images/sample-05.png" class="d-block w-100" alt="Patch 5"
+                    style="margin: 0 auto" />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#footerPatchCarousel"
+                data-bs-slide="prev" style="width: 48px">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#footerPatchCarousel"
+                data-bs-slide="next" style="width: 48px">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-
+      <hr class="mt-4" style="border-color: #000" />
+      <div class="text-center" style="color: #222">
+        © 2018 - 2025 Digitizers Online.com All Rights Reserved.
+      </div>
     </div>
-
-  </div>
+  </footer>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
