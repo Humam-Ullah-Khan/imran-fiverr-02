@@ -121,7 +121,7 @@
         <nav class="navbar navbar-expand-lg p-0">
           <div class="container-fluid p-0 p-2">
             <a class="navbar-brand" href="#">
-              <img src="./sitelayout-images/LOGO.png" alt="Logo" width="100px" class="object-fit-contain" />
+              <img src="{{ asset('sitelayout-images/Logo.png')}}" alt="Logo" width="100px" class="object-fit-contain" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -444,23 +444,23 @@
             <div id="footerPatchCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner rounded" style="background: #fff">
                 <div class="carousel-item active">
-                  <img src="./sitelayout-images/sample-01.png" class="d-block w-100 object-fit-cover" alt="Patch 1"
+                  <img src="{{ asset('sitelayout-images/sample-01.png')}}" class="d-block w-100 object-fit-cover" alt="Patch 1"
                     style="margin: 0 auto" />
                 </div>
                 <div class="carousel-item">
-                  <img src="./sitelayout-images/sample-02.png" class="d-block w-100" alt="Patch 2"
+                  <img src="{{ asset('sitelayout-images/sample-02.png')}}" class="d-block w-100" alt="Patch 2"
                     style="margin: 0 auto" />
                 </div>
                 <div class="carousel-item">
-                  <img src="./sitelayout-images/sample-03.png" class="d-block w-100" alt="Patch 3"
+                  <img src="{{ asset('sitelayout-images/sample-03.png')}}" class="d-block w-100" alt="Patch 3"
                     style="margin: 0 auto" />
                 </div>
                 <div class="carousel-item">
-                  <img src="./sitelayout-images/sample-04.png" class="d-block w-100" alt="Patch 4"
+                  <img src="{{ asset('sitelayout-images/sample-04.png')}}" class="d-block w-100" alt="Patch 4"
                     style="margin: 0 auto" />
                 </div>
                 <div class="carousel-item">
-                  <img src="./sitelayout-images/sample-05.png" class="d-block w-100" alt="Patch 5"
+                  <img src="{{ asset('sitelayout-images/sample-05.png')}}" class="d-block w-100" alt="Patch 5"
                     style="margin: 0 auto" />
                 </div>
               </div>
