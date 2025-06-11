@@ -1,5 +1,5 @@
 
-@extends('mastersdigitizing-layout/master')
+@extends('sitelayout/master')
 
 @section('content')
 

@@ -1,4 +1,4 @@
-@extends('mastersdigitizing-layout.master')
+@extends('sitelayout/master')
 
 @section('css')
   <style>
