@@ -149,10 +149,10 @@
                       <a class="dropdown-item" href="/applique-digitizing">Applique Digitizing Service</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/embroidery-digitizing">Cap Digitizing</a>
+                      <a class="dropdown-item" href="/embroidered-patches">Cap Digitizing</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/embroidery-digitizing">Chenille Digitizing</a>
+                      <a class="dropdown-item" href="/embroidered-patches">Chenille Digitizing</a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="/embroidered-patches">Custom Embroidery Patches</a>
@@ -175,10 +175,10 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-solid fa-tags"></i> Samples</a>
+                  <a class="nav-link" href="/embroidered-patches"><i class="fa-solid fa-tags"></i> Samples</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="ri-phone-fill"></i> Contant Us</a>
+                  <a class="nav-link" href="/contact-us"><i class="ri-phone-fill"></i> Contant Us</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#" href="javascript:;" data-toggle="modal" data-target="#SignInModal"><i class="ri-user-3-fill"></i> Sign In</a></li>
@@ -351,27 +351,18 @@
           <h5 class="fw-bold mb-3">Quick Links</h5>
           <ul class="list-unstyled footer-links">
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Home</a>
+              <a href="/"><i class="fa-solid fa-angle-right me-2"></i>Home</a>
             </li>
             <li>
               <a href="/about-us"><i class="fa-solid fa-angle-right me-2"></i>About Us</a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Samples</a>
+              <a href="/embroidered-patches"><i class="fa-solid fa-angle-right me-2"></i>Samples</a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Contact Us</a>
+              <a href="/contact-us"><i class="fa-solid fa-angle-right me-2"></i>Contact Us</a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Free Instant
-                Quote</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Reviews</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Sitemap</a>
-            </li>
             <li>
               <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Terms and
                 Condition</a>
@@ -380,16 +371,6 @@
               <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Privacy
                 Policies</a>
             </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Cancellation
-                Policy</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Refund Policy</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Blog</a>
-            </li>
           </ul>
         </div>
         <!-- Services -->
@@ -397,42 +378,42 @@
           <h5 class="fw-bold mb-3">Services</h5>
           <ul class="list-unstyled footer-links">
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>3D Puff
+              <a href="/3d-puff-digitizing"><i class="fa-solid fa-angle-right me-2"></i>3D Puff
                 Digitizing</a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Applique
+              <a href="/applique-digitizing"><i class="fa-solid fa-angle-right me-2"></i>Applique
                 Digitizing</a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Cap Digitizing</a>
+              <a href="/logo-digitizing"><i class="fa-solid fa-angle-right me-2"></i>Cap Digitizing</a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Chenille
+              <a href="/vector-art"><i class="fa-solid fa-angle-right me-2"></i>Chenille
                 Digitizing</a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Custom Embroidery
+              <a href="/embroidered-patches"><i class="fa-solid fa-angle-right me-2"></i>Custom Embroidery
                 Patches</a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Jacket Back
+              <a href="/jacket-back-digitizing"><i class="fa-solid fa-angle-right me-2"></i>Jacket Back
                 Digitizing</a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Logo
+              <a href="/logo-digitizing"><i class="fa-solid fa-angle-right me-2"></i>Logo
                 Digitizing</a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Sleeve
+              <a href="/embroidered-patches"><i class="fa-solid fa-angle-right me-2"></i>Sleeve
                 Digitizing</a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>T Shirt
+              <a href="/jacket-back-digitizing"><i class="fa-solid fa-angle-right me-2"></i>T Shirt
                 Embroidery Digitizing</a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Vector Artwork
+              <a href="/vector-art"><i class="fa-solid fa-angle-right me-2"></i>Vector Artwork
                 Conversion</a>
             </li>
           </ul>
