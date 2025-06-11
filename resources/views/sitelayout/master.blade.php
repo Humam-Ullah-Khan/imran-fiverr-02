@@ -121,7 +121,7 @@
         <nav class="navbar navbar-expand-lg p-0">
           <div class="container-fluid p-0 p-2">
             <a class="navbar-brand" href="#">
-              <img src="{{ asset('sitelayout-images/Logo.png')}}" alt="Logo" width="100px" class="object-fit-contain" />
+              <img src="{{ asset('sitelayout-images/Logo.png')}}" alt="Logo" width="120px" class="object-fit-contain" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -131,10 +131,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mx-auto gap-md-4 mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"><i class="ri-home-9-fill"></i> Home</a>
+                  <a class="nav-link active" aria-current="page" href="/"><i class="ri-home-9-fill"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa-solid fa-users-line"></i> About Us</a>
+                  <a class="nav-link" href="/about-us"><i class="fa-solid fa-users-line"></i> About Us</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -143,34 +143,34 @@
                   </a>
                   <ul class="dropdown-menu p-1">
                     <li>
-                      <a class="dropdown-item" href="#">3D Puff Digitizing</a>
+                      <a class="dropdown-item" href="/3d-puff-digitizing">3D Puff Digitizing</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Applique Digitizing Service</a>
+                      <a class="dropdown-item" href="/applique-digitizing">Applique Digitizing Service</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Cap Digitizing</a>
+                      <a class="dropdown-item" href="/embroidery-digitizing">Cap Digitizing</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Chenille Digitizing</a>
+                      <a class="dropdown-item" href="/embroidery-digitizing">Chenille Digitizing</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Custom Embroidery Patches</a>
+                      <a class="dropdown-item" href="/embroidered-patches">Custom Embroidery Patches</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Jacket Back Digitizing</a>
+                      <a class="dropdown-item" href="/jacket-back-digitizing">Jacket Back Digitizing</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Logo Digitizing</a>
+                      <a class="dropdown-item" href="/logo-digitizing">Logo Digitizing</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Sleeve Digitizing</a>
+                      <a class="dropdown-item" href="/vector-art-digitizing">Sleeve Digitizing</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">T Shirt Embroidery Digitizing</a>
+                      <a class="dropdown-item" href="/jacket-back-digitizing">T Shirt Embroidery Digitizing</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">Vector Artwork Conversion</a>
+                      <a class="dropdown-item" href="/vector-art">Vector Artwork Conversion</a>
                     </li>
                   </ul>
                 </li>
@@ -354,7 +354,7 @@
               <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Home</a>
             </li>
             <li>
-              <a href="#"><i class="fa-solid fa-angle-right me-2"></i>About Us</a>
+              <a href="/about-us"><i class="fa-solid fa-angle-right me-2"></i>About Us</a>
             </li>
             <li>
               <a href="#"><i class="fa-solid fa-angle-right me-2"></i>Samples</a>
