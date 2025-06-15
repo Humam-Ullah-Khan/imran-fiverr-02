@@ -4,9 +4,9 @@
   <style>
     :root {
       --LightRed: rgb(255 16 16 / 60%);
-      --Primary: {{ $CmsData[0]->primaryColor }};
+      --Primary: {{ isset($CmsData[0]) ? $CmsData[0]->primaryColor : '#165261' }};
       --Light: rgba(0, 0, 0, 0.6);
-      --Secondary: {{ $CmsData[0]->secondaryColor }};
+      --Secondary: {{ isset($CmsData[0]) ? $CmsData[0]->secondaryColor : '#165261' }};
       --White: #fff;
       --Gray: #ece8e8;
       --skyBlue: #ece8e8;
@@ -453,8 +453,8 @@
                 <div class="col-12">
 
                   <input type="hidden" name="orderType" class="orderType" value="Digitize">
-
-                  <input type="hidden" name="orderprice" class="orderprice" value="{{ $CmsData[0]->digitizePrice }}">
+                  <input type="hidden" name="orderprice" class="orderprice"
+                    value="{{ isset($CmsData[0]) ? $CmsData[0]->digitizePrice : '0' }}">
 
                   <button type="submit" class="btn btn-success btn-lg py-1">
 

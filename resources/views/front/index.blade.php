@@ -42,7 +42,7 @@
             +01 2345 678901
           </a>
 
-          <a href="#" class="btn btn-outline-light py-1">Turn My Art Work to Stitches</a>
+          <a href="/embroidery-digitizing" class="btn btn-outline-light py-1">Turn My Art Work to Stitches</a>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@
       </h2>
 
       <div class="text-center mb-5">
-        <img src="{{ asset ('sitelayout-images/star_line.png')}}" alt="" width="150px" />
+        <img src="./sitelayout-images/star_line.png" alt="" width="150px" />
       </div>
       <div class="row">
         <div class="col-md-6">
@@ -97,13 +97,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="{{ asset('sitelayout-images/shirt-01.jpg')}}" class="d-block w-100" alt="..." />
+                <img src="./sitelayout-images/shirt-01.jpg" class="d-block w-100" alt="shirt-01" />
               </div>
               <div class="carousel-item">
-                <img src="{{ asset('sitelayout-images/shirt-02.jpg')}}" class="d-block w-100" alt="..." />
+                <img src="./sitelayout-images/shirt-02.jpg" class="d-block w-100" alt="shirt-02" />
               </div>
               <div class="carousel-item">
-                <img src="{{ asset('sitelayout-images/shirt-03.jpg')}}" class="d-block w-100" alt="..." />
+                <img src="./sitelayout-images/shirt-03.jpg" class="d-block w-100" alt="shirt-03" />
               </div>
             </div>
           </div>
@@ -120,7 +120,7 @@
       </h2>
 
       <div class="text-center mb-5">
-        <img src="{{ asset ('sitelayout-images/star_line.png')}}" alt="" width="150px" />
+        <img src="./sitelayout-images/star_line.png" alt="" width="150px" />
       </div>
 
       <div class="row g-4">
@@ -155,7 +155,7 @@
             competitive pricing across New York, Washington, and beyond.
           </p>
 
-          <a href="#" class="btn btn-primary py-1 px-4">Place Order Now</a>
+          <a href="/embroidery-digitizing" class="btn btn-primary py-1 px-4">Place Order Now</a>
         </div>
       </div>
     </div>
@@ -171,7 +171,7 @@
           </h1>
         </div>
         <div class="text-center mb-5">
-          <img src="{{ asset ('sitelayout-images/star_line.png')}}" alt="" width="150px" />
+          <img src="./sitelayout-images/star_line.png" alt="" width="150px" />
         </div>
 
         <div class="col-md-4">
@@ -234,7 +234,7 @@
     <div class="container">
       <h1 class="section-subtitle text-center mb-2">Our Service</h1>
       <div class="text-center mb-5">
-        <img src="{{ asset ('sitelayout-images/star_line.png')}}" alt="" width="150px" />
+        <img src="./sitelayout-images/star_line.png" alt="" width="150px" />
       </div>
       <div class="row g-4 justify-content-center">
         <!-- Service 1 -->
@@ -287,18 +287,21 @@
         Excellence Samples Gallery
       </h2>
       <div class="text-center mb-4">
-        <img src="{{ asset ('sitelayout-images/star_line.png')}}" alt="" width="150px" />
+        <img src="./sitelayout-images/star_line.png" alt="" width="150px" />
       </div>
       <div class="row row-cols-2 row-cols-md-4 g-4 justify-content-center">
         <!-- Sample 1 -->
         <div class="col-md-3">
           <div class="sample-img-wrap position-relative overflow-hidden rounded">
+            <a href="/3d-puff-digitizing">
+              
             <img src="{{ asset('sitelayout-images/sample-01.png')}}" alt="Puff Digitizing" class="img-fluid w-100" />
+            </a>
             <div class="sample-img-overlay d-flex align-items-center justify-content-center">
               <span class="fw-bold text-white fs-5">Puff Digitizing</span>
             </div>
             <div class="sample-title text-center fw-bold mt-2 d-md-none">
-              Puff Digitizing
+              <a href="/3d-puff-digitizing">Puff Digitizing</a>
             </div>
           </div>
         </div>
@@ -310,7 +313,7 @@
               <span class="fw-bold text-white fs-5">Sleeve Digitizing</span>
             </div>
             <div class="sample-title text-center fw-bold mt-2 d-md-none">
-              Sleeve Digitizing
+              <a href="">Sleeve Digitizing</a>
             </div>
           </div>
         </div>
@@ -397,7 +400,7 @@
         Audience's Unbiased Comments about Embroidery Digitizing Service
       </h2>
       <div class="text-center mb-4">
-        <img src="{{ asset ('sitelayout-images/star_line.png')}}" alt="" width="150px" />
+        <img src="./sitelayout-images/star_line.png" alt="" width="150px" />
       </div>
       <div class="row g-4 justify-content-center">
         <!-- Testimonial 1 -->

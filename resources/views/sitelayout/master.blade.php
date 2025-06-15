@@ -26,6 +26,10 @@
   <link rel="stylesheet" href="{{ asset('sitelayout-css/styles.css') }}">
   <link rel="stylesheet" href="{{ asset('sitelayout-css/custom.css') }}">
 
+  <!-- Booststrap  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+
   {{-- bootstrap --}}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
@@ -121,7 +125,8 @@
         <nav class="navbar navbar-expand-lg p-0">
           <div class="container-fluid p-0 p-2">
             <a class="navbar-brand" href="#">
-              <img src="{{ asset('sitelayout-images/Logo.png')}}" alt="Logo" width="120px" class="object-fit-contain" />
+              <img src="{{ asset('sitelayout-images/Logo.png') }}" alt="Logo" width="120px"
+                class="object-fit-contain" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -170,7 +175,7 @@
                       <a class="dropdown-item" href="/jacket-back-digitizing">T Shirt Embroidery Digitizing</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/vector-art">Vector Artwork Conversion</a>
+                      <a class="dropdown-item" href="/vector-art-digitizing">Vector Artwork Conversion</a>
                     </li>
                   </ul>
                 </li>
@@ -181,7 +186,9 @@
                   <a class="nav-link" href="/contact-us"><i class="ri-phone-fill"></i> Contant Us</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#" href="javascript:;" data-toggle="modal" data-target="#SignInModal"><i class="ri-user-3-fill"></i> Sign In</a></li>
+                  <a class="nav-link" href="#" href="javascript:;" data-toggle="modal"
+                    data-target="#SignInModal"><i class="ri-user-3-fill"></i> Sign In</a>
+                </li>
                 </li>
               </ul>
               <!-- <div class="Navbar-btn">
@@ -323,7 +330,8 @@
       <div class="row gy-4 align-items-start">
         <!-- About -->
         <div class="col-lg-3 col-md-6">
-          <img src="./sitelayout-images/LOGO.png" alt="Embroidery Digitizing Logo" width="120" class="mb-3" />
+          <img src="{{ asset('sitelayout-images/Logo.png') }}" alt="Logo" width="120px"
+            class="object-fit-contain" />
           <p class="mb-3" style="color: #222">
             Digitizers Online is the reliable source that visions the
             digitizing industry for tomorrow and raises the bars of customer
@@ -425,23 +433,23 @@
             <div id="footerPatchCarousel" class="carousel slide" data-bs-ride="carousel">
               <div class="carousel-inner rounded" style="background: #fff">
                 <div class="carousel-item active">
-                  <img src="{{ asset('sitelayout-images/sample-01.png')}}" class="d-block w-100 object-fit-cover" alt="Patch 1"
+                  <img src="./sitelayout-images/sample-01.png" class="d-block w-100 object-fit-cover" alt="Patch 1"
                     style="margin: 0 auto" />
                 </div>
                 <div class="carousel-item">
-                  <img src="{{ asset('sitelayout-images/sample-02.png')}}" class="d-block w-100" alt="Patch 2"
+                  <img src="./sitelayout-images/sample-01.png" class="d-block w-100" alt="Patch 2"
                     style="margin: 0 auto" />
                 </div>
                 <div class="carousel-item">
-                  <img src="{{ asset('sitelayout-images/sample-03.png')}}" class="d-block w-100" alt="Patch 3"
+                  <img src="./sitelayout-images/sample-01.png" class="d-block w-100" alt="Patch 3"
                     style="margin: 0 auto" />
                 </div>
                 <div class="carousel-item">
-                  <img src="{{ asset('sitelayout-images/sample-04.png')}}" class="d-block w-100" alt="Patch 4"
+                  <img src="./sitelayout-images/sample-01.png" class="d-block w-100" alt="Patch 4"
                     style="margin: 0 auto" />
                 </div>
                 <div class="carousel-item">
-                  <img src="{{ asset('sitelayout-images/sample-05.png')}}" class="d-block w-100" alt="Patch 5"
+                  <img src="./sitelayout-images/sample-01.png" class="d-block w-100" alt="Patch 5"
                     style="margin: 0 auto" />
                 </div>
               </div>

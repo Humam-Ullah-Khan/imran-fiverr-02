@@ -1,8 +1,8 @@
-@extends('front/layout')
+@extends('sitelayout/master')
 
 
 
-@section('container')
+@section('content')
 {{ Cookie::get('postedArticle') }}
 
 
@@ -184,7 +184,7 @@
 </div>
 @endsection
 
-@section('js')
+@section('scripts')
 <script>
     $(document).ready(function() {
             $(document).on('click', '#transaction', function() {

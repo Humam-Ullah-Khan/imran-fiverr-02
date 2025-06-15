@@ -4,9 +4,9 @@
   <style>
     :root {
       --LightRed: rgb(255 16 16 / 60%);
-      --Primary: {{ $CmsData[0]->primaryColor }};
+      --Primary: {{ isset($CmsData[0]) ? $CmsData[0]->primaryColor : '#165261' }};
       --Light: rgba(0, 0, 0, 0.6);
-      --Secondary: {{ $CmsData[0]->secondaryColor }};
+      --Secondary: {{ isset($CmsData[0]) ? $CmsData[0]->secondaryColor : '#165261' }};
       --White: #fff;
       --Gray: #ece8e8;
       --skyBlue: #ece8e8;
@@ -333,7 +333,7 @@
                   <div class="form-group">
 
                     <button type="button" class="btn btn-success btn-lg w-100 TypeOrder py-1 rounded"
-                      dataPrice="{{ $CmsData[0]->digitizePrice }}" datatext="Digitize">
+                      dataPrice="{{ isset($CmsData[0]) ? $CmsData[0]->digitizePrice : '0' }}" datatext="Digitize">
 
                       <i class="fas fa-pencil-ruler me-2"></i> Digitize
 
@@ -348,7 +348,7 @@
                   <div class="form-group">
 
                     <button type="button" class="btn btn-danger btn-lg w-100 TypeOrder py-1 rounded"
-                      dataPrice="{{ $CmsData[0]->vectorizePrice }}" datatext="Vectorized">
+                      dataPrice="{{ isset($CmsData[0]) ? $CmsData[0]->vectorizePrice : '0' }}" datatext="Vectorized">
 
                       <i class="fas fa-vector-square me-2"></i> Vectorized
 
@@ -425,7 +425,7 @@
 
                   <input type="hidden" name="orderType" class="orderType" value="Digitize">
 
-                  <input type="hidden" name="orderprice" class="orderprice" value="{{ $CmsData[0]->digitizePrice }}">
+                  <input type="hidden" name="orderprice" class="orderprice" value="{{ isset($CmsData[0]) ? $CmsData[0]->digitizePrice : '0' }}">
 
                   <!--  Do Not show google recptcha input on form
                     <div id="recaptcha-container"></div>
