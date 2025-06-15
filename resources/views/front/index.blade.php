@@ -126,7 +126,7 @@
       <div class="row g-4">
         <!-- left Side  -->
         <div class="col-md-6">
-          <img src="{{ asset('sitelayout-images/custom-services.jpg')}}" alt="" width="100%" />
+          <img src="{{ asset('sitelayout-images/custom-services.jpg') }}" alt="" width="100%" />
         </div>
 
         <!-- Right Side -->
@@ -176,7 +176,8 @@
 
         <div class="col-md-4">
           <div class="card w-100 border-0">
-            <img src="{{ asset('sitelayout-images/order-details.png')}}" class="" alt="Card Image" width="250px" />
+            <img src="{{ asset('sitelayout-images/order-details.png') }}" class="" alt="Card Image"
+              width="250px" />
             <div class="card-body">
               <h5 class="card-title">
                 <strong>1. Share Order Details</strong>
@@ -192,7 +193,8 @@
 
         <div class="col-md-4">
           <div class="card w-100 border-0">
-            <img src="{{ asset('sitelayout-images/order-payment.png')}}" class="" alt="Card Image" width="190px" />
+            <img src="{{ asset('sitelayout-images/order-payment.png') }}" class="" alt="Card Image"
+              width="190px" />
             <div class="card-body">
               <h5 class="card-title">
                 <strong>2. Pay For Your Order</strong>
@@ -208,7 +210,8 @@
 
         <div class="col-md-4">
           <div class="card w-100 border-0">
-            <img src="{{ asset('sitelayout-images/order-delivery.png')}}" class="" alt="Card Image" width="220px" />
+            <img src="{{ asset('sitelayout-images/order-delivery.png') }}" class="" alt="Card Image"
+              width="220px" />
             <div class="card-body">
               <h5 class="card-title">
                 <strong>3. Get The Timely Delivery</strong>
@@ -240,8 +243,8 @@
         <!-- Service 1 -->
         <div class="col-md-4">
           <div class="card border-0 shadow-sm h-100 text-center p-3">
-            <img src="{{ asset('sitelayout-images/service-01.png')}}" alt="Vector Art Conversion" class="img-fluid mb-3"
-              style="max-height: 170px; object-fit: contain" />
+            <img src="{{ asset('sitelayout-images/service-01.png') }}" alt="Vector Art Conversion"
+              class="img-fluid mb-3" style="max-height: 170px; object-fit: contain" />
             <p class="mb-4">
               We take your rough sketches or raster images and give your
               vector designs that are ready to be printed and converted into
@@ -253,8 +256,8 @@
         <!-- Service 2 -->
         <div class="col-md-4">
           <div class="card border-0 shadow-sm h-100 text-center p-3">
-            <img src="{{ asset('sitelayout-images/service-02.png')}}" alt="T Shirt Embroidery Digitizing" class="img-fluid mb-3"
-              style="max-height: 170px; object-fit: contain" />
+            <img src="{{ asset('sitelayout-images/service-02.png') }}" alt="T Shirt Embroidery Digitizing"
+              class="img-fluid mb-3" style="max-height: 170px; object-fit: contain" />
             <p class="mb-4">
               We have over ten years of experience in digitizing and can
               transform your artwork into a stitch format that embroidery
@@ -266,8 +269,8 @@
         <!-- Service 3 -->
         <div class="col-md-4">
           <div class="card border-0 shadow-sm h-100 text-center p-3">
-            <img src="{{ asset('sitelayout-images/service-03.png')}}" alt="Custom Embroidered Patches" class="img-fluid mb-3"
-              style="max-height: 170px; object-fit: contain" />
+            <img src="{{ asset('sitelayout-images/service-03.png') }}" alt="Custom Embroidered Patches"
+              class="img-fluid mb-3" style="max-height: 170px; object-fit: contain" />
             <p class="mb-4">
               Our high-speed machines and competent team can produce intricate
               designs. We create custom patches that are detailed, vibrant,
@@ -293,13 +296,10 @@
         <!-- Sample 1 -->
         <div class="col-md-3">
           <div class="sample-img-wrap position-relative overflow-hidden rounded">
-            <a href="/3d-puff-digitizing">
-              
-            <img src="{{ asset('sitelayout-images/sample-01.png')}}" alt="Puff Digitizing" class="img-fluid w-100" />
-            </a>
-            <div class="sample-img-overlay d-flex align-items-center justify-content-center">
+            <img src="{{ asset('sitelayout-images/sample-01.png') }}" alt="Puff Digitizing" class="img-fluid w-100" />
+            <a href="/3d-puff-digitizing" class="sample-img-overlay d-flex align-items-center justify-content-center">
               <span class="fw-bold text-white fs-5">Puff Digitizing</span>
-            </div>
+            </a>
             <div class="sample-title text-center fw-bold mt-2 d-md-none">
               <a href="/3d-puff-digitizing">Puff Digitizing</a>
             </div>
@@ -308,84 +308,85 @@
         <!-- Sample 2 -->
         <div class="col-md-3">
           <div class="sample-img-wrap position-relative overflow-hidden rounded">
-            <img src="{{ asset('sitelayout-images/sample-02.png')}}" alt="Sleeve Digitizing" class="img-fluid" />
-            <div class="sample-img-overlay d-flex align-items-center justify-content-center">
-              <span class="fw-bold text-white fs-5">Sleeve Digitizing</span>
-            </div>
+            <img src="{{ asset('sitelayout-images/sample-02.png') }}" alt="Sleeve Digitizing" class="img-fluid" />
+            <a href="/vector-art-digitizing" class="sample-img-overlay d-flex align-items-center justify-content-center">
+              <span class="fw-bold text-white fs-5">Vector Art Digitizing</span>
+            </a>
             <div class="sample-title text-center fw-bold mt-2 d-md-none">
-              <a href="">Sleeve Digitizing</a>
+              <a href="/vector-art-digitizing">Vector Art Digitizing</a>
             </div>
           </div>
         </div>
         <!-- Sample 3 -->
         <div class="col-md-3">
           <div class="sample-img-wrap position-relative overflow-hidden rounded">
-            <img src="{{ asset('sitelayout-images/sample-03.png')}}" alt="Cap Digitizing" class="img-fluid w-100" />
-            <div class="sample-img-overlay d-flex align-items-center justify-content-center">
+            <img src="{{ asset('sitelayout-images/sample-03.png') }}" alt="Cap Digitizing" class="img-fluid w-100" />
+            <a href="/logo-digitizing" class="sample-img-overlay d-flex align-items-center justify-content-center">
               <span class="fw-bold text-white fs-5">Cap Digitizing</span>
-            </div>
+            </a>
             <div class="sample-title text-center fw-bold mt-2 d-md-none">
-              Cap Digitizing
+              <a href="/logo-digitizing">Cap Digitizing</a>
             </div>
           </div>
         </div>
         <!-- Sample 4 -->
         <div class="col-md-3">
           <div class="sample-img-wrap position-relative overflow-hidden rounded">
-            <img src="{{ asset('sitelayout-images/sample-04.png')}}" alt="Patch Collection" class="img-fluid w-100" />
-            <div class="sample-img-overlay d-flex align-items-center justify-content-center">
+            <img src="{{ asset('sitelayout-images/sample-04.png') }}" alt="Patch Collection"
+              class="img-fluid w-100" />
+            <a href="/logo-digitizing" class="sample-img-overlay d-flex align-items-center justify-content-center">
               <span class="fw-bold text-white fs-5">Patch Collection</span>
-            </div>
+            </a>
             <div class="sample-title text-center fw-bold mt-2 d-md-none">
-              Patch Collection
+              <a href="/logo-digitizing">Patch Collection</a>
             </div>
           </div>
         </div>
         <!-- Sample 5 -->
         <div class="col-md-3">
           <div class="sample-img-wrap position-relative overflow-hidden rounded">
-            <img src="{{ asset('sitelayout-images/sample-05.png')}}" alt="Applique Digitizing" class="img-fluid" />
-            <div class="sample-img-overlay d-flex align-items-center justify-content-center">
+            <img src="{{ asset('sitelayout-images/sample-05.png') }}" alt="Applique Digitizing" class="img-fluid" />
+            <a href="/applique-digitizing" class="sample-img-overlay d-flex align-items-center justify-content-center">
               <span class="fw-bold text-white fs-5">Applique Digitizing</span>
-            </div>
+            </a>
             <div class="sample-title text-center fw-bold mt-2 d-md-none">
-              Applique Digitizing
+              <a href="/applique-digitizing">Applique Digitizing</a>
             </div>
           </div>
         </div>
         <!-- Sample 6 -->
         <div class="col-md-3">
           <div class="sample-img-wrap position-relative overflow-hidden rounded">
-            <img src="{{ asset('sitelayout-images/sample-06.png')}}" alt="Owl Jacket" class="img-fluid w-100" />
-            <div class="sample-img-overlay d-flex align-items-center justify-content-center">
-              <span class="fw-bold text-white fs-5">Owl Jacket</span>
-            </div>
+            <img src="{{ asset('sitelayout-images/sample-06.png') }}" alt="Owl Jacket" class="img-fluid w-100" />
+            <a href="/jacket-back-digitizing" class="sample-img-overlay d-flex align-items-center justify-content-center">
+              <span class="fw-bold text-white fs-5">Jacket Back</span>
+            </a>
             <div class="sample-title text-center fw-bold mt-2 d-md-none">
-              Owl Jacket
+              <a href="/jacket-back-digitizing">Jacket Back</a>
             </div>
           </div>
         </div>
         <!-- Sample 7 -->
         <div class="col-md-3">
           <div class="sample-img-wrap position-relative overflow-hidden rounded">
-            <img src="{{ asset('sitelayout-images/sample-07.png')}}" alt="Patch Set" class="img-fluid w-100" />
-            <div class="sample-img-overlay d-flex align-items-center justify-content-center">
+            <img src="{{ asset('sitelayout-images/sample-07.png') }}" alt="Patch Set" class="img-fluid w-100" />
+            <a href="/embroidered-patches" class="sample-img-overlay d-flex align-items-center justify-content-center">
               <span class="fw-bold text-white fs-5">Patch Set</span>
-            </div>
+            </a>
             <div class="sample-title text-center fw-bold mt-2 d-md-none">
-              Patch Set
+              <a href="/embroidered-patches">Patch Set</a>
             </div>
           </div>
         </div>
         <!-- Sample 8 -->
         <div class="col-md-3">
           <div class="sample-img-wrap position-relative overflow-hidden rounded">
-            <img src="{{ asset('sitelayout-images/sample-08.png')}}" alt="Hawks T-shirt" class="img-fluid w-100" />
-            <div class="sample-img-overlay d-flex align-items-center justify-content-center">
+            <img src="{{ asset('sitelayout-images/sample-08.png') }}" alt="Hawks T-shirt" class="img-fluid w-100" />
+            <a href="/jacket-back-digitizing" class="sample-img-overlay d-flex align-items-center justify-content-center">
               <span class="fw-bold text-white fs-5">Hawks T-shirt</span>
-            </div>
+            </a>
             <div class="sample-title text-center fw-bold mt-2 d-md-none">
-              Hawks T-shirt
+              <a href="/jacket-back-digitizing">Hawks T-shirt</a>
             </div>
           </div>
         </div>
@@ -424,8 +425,8 @@
             </p>
             <div class="testimonial-arrow"></div>
             <div class="d-flex flex-column align-items-center mt-4">
-              <img src="{{ asset('sitelayout-images/review-01.webp')}}" alt="Robort" class="rounded-circle mb-2" width="70"
-                height="70" style="object-fit: cover; border: 3px solid #4a90e2" />
+              <img src="{{ asset('sitelayout-images/review-01.webp') }}" alt="Robort" class="rounded-circle mb-2"
+                width="70" height="70" style="object-fit: cover; border: 3px solid #4a90e2" />
               <span class="fw-semibold" style="color: #4a90e2">Robort</span>
             </div>
           </div>
@@ -451,8 +452,8 @@
             </p>
             <div class="testimonial-arrow"></div>
             <div class="d-flex flex-column align-items-center mt-4">
-              <img src="{{ asset('sitelayout-images/review-02.jpg')}}" alt="Kelly" class="rounded-circle mb-2" width="70"
-                height="70" style="object-fit: cover; border: 3px solid #4a90e2" />
+              <img src="{{ asset('sitelayout-images/review-02.jpg') }}" alt="Kelly" class="rounded-circle mb-2"
+                width="70" height="70" style="object-fit: cover; border: 3px solid #4a90e2" />
               <span class="fw-semibold" style="color: #4a90e2">Kelly</span>
             </div>
           </div>
@@ -478,8 +479,8 @@
             </p>
             <div class="testimonial-arrow"></div>
             <div class="d-flex flex-column align-items-center mt-4">
-              <img src="{{ asset('sitelayout-images/review-03.jpg')}}" alt="Patrick" class="rounded-circle mb-2" width="70"
-                height="70" style="object-fit: cover; border: 3px solid #4a90e2" />
+              <img src="{{ asset('sitelayout-images/review-03.jpg') }}" alt="Patrick" class="rounded-circle mb-2"
+                width="70" height="70" style="object-fit: cover; border: 3px solid #4a90e2" />
               <span class="fw-semibold" style="color: #4a90e2">Zaka Zilla</span>
             </div>
           </div>
