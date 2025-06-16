@@ -37,22 +37,22 @@ use Illuminate\Support\Str;
 */
 
 Route::get('/linkstorage', function () {
-    Artisan::call('storage:link');
+  Artisan::call('storage:link');
 });
 
 // optimize
 Route::get('/optimize', function () {
-    Artisan::call('optimize');
-    Artisan::call('config:cache');
-    Artisan::call('route:cache');
-    Artisan::call('view:cache');
+  Artisan::call('optimize');
+  Artisan::call('config:cache');
+  Artisan::call('route:cache');
+  Artisan::call('view:cache');
 
-    // deattach symb links
-    Artisan::call('storage:link');
+  // deattach symb links
+  Artisan::call('storage:link');
 
-    
 
-    return 'Optimized';
+
+  return 'Optimized';
 });
 
 Route::get('/', [FrontControllerController::class, 'index']);
@@ -92,11 +92,11 @@ Route::post('/customerForgot', [FrontControllerController::class, 'customerForgo
 // checkout discount
 Route::post('/checkout-discount', [FrontControllerController::class, 'checkoutDiscount'])->name('front.checkoutDiscount');
 
-Route::get('/checkout/success/{id}', [FrontControllerController::class,'StripeSuccess'])->name('checkout.success');
+Route::get('/checkout/success/{id}', [FrontControllerController::class, 'StripeSuccess'])->name('checkout.success');
 
 Route::get('/checkout/cancel', [FrontControllerController::class, 'StripeCancel'])->name('checkout.cancel');
 
-Route::post('/checkout-session',[FrontControllerController::class,'CreateStripeSession']);
+Route::post('/checkout-session', [FrontControllerController::class, 'CreateStripeSession']);
 
 // paypal start
 Route::get('paypal/payment', [PayPalController::class, 'createPayment'])->name('paypal.payment');
@@ -111,10 +111,10 @@ Route::post('/orderCancel', [AdminController::class, 'orderCancel'])->name('desi
 Route::post('/frontorderremoveAttachment', [FrontControllerController::class, 'frontgetorderremoveAttachment'])->name('front.frontorderremoveAttachment');
 
 Route::get('/logout', function () {
-    session()->forget('CUSTOMER_ID');
-    session()->forget('CUSTOMER_NAME');
+  session()->forget('CUSTOMER_ID');
+  session()->forget('CUSTOMER_NAME');
 
-    return redirect('/');
+  return redirect('/');
 });
 
 Route::get('admin', [AdminController::class, 'index']);
@@ -205,7 +205,7 @@ Route::get('/CustomerDelete/{id}', [AllCustomersDataController::class, 'Customer
 Route::get('admin/all-cms-content', [CmsModulesFrontController::class, 'index']);
 Route::post('/processPanel', [CmsModulesFrontController::class, 'GetprocessPanel'])->name('cms.processPanel');
 Route::get('admin/logout', function () {
-    return redirect('/admin/');
+  return redirect('/admin/');
 });
 
 
@@ -215,11 +215,11 @@ Route::get('admin/logout', function () {
 Route::get('designer', [DesignerController::class, 'index']);
 Route::post('designer/auth', [DesignerController::class, 'auth'])->name('designer.auth');
 Route::get('designer/logout', function () {
-    session()->forget('DES_AGENT_ID');
-    session()->forget('DES_USER_NAME');
-    session()->forget('DES_AGENT_USERTYPE');
-    session()->forget('DES_USER_NAME');
-    return redirect('designer');
+  session()->forget('DES_AGENT_ID');
+  session()->forget('DES_USER_NAME');
+  session()->forget('DES_AGENT_USERTYPE');
+  session()->forget('DES_USER_NAME');
+  return redirect('designer');
 });
 Route::get('designer/dashboard', [DesignerController::class, 'dashboard'])->name('designer.dashboard');
 Route::get('designer/job-list', [DesignerController::class, 'jobList'])->name('designer.job-list');

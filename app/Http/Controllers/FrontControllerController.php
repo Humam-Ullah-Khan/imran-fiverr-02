@@ -71,6 +71,13 @@ class FrontControllerController extends Controller
     }
 
 
+    public function samples(Request $request)
+    {
+        $CmsData = cmsModulesFront::all();
+
+        return view('front.samples')->with(['CmsData' => $CmsData]);
+    }
+
     public function logoDigitizing(Request $request)
     {
         $CmsData = cmsModulesFront::all();
