@@ -233,7 +233,7 @@
 
   <div class="affordableSec pt-4 pb-5 bg-light">
 
-    <div class="container-fluid px-3">
+    <div class="container px-md-5 px-2">
 
       <div class="row justify-content-center">
 

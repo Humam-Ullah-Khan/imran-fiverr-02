@@ -41,7 +41,11 @@
 	font-size: 16px;
 }
 .ContentInfo h1{
-	font-family: 'Orbitron', sans-serif;
+	font-family: "Squada One", sans-serif;
+  font-size: 45px;
+  font-weight: normal; 
+  letter-spacing: 2px;
+  text-align: center;
 }
 .OrderForm{
 	background: var(--Gray);
