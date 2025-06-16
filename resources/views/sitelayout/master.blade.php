@@ -185,11 +185,6 @@
                 <li class="nav-item">
                   <a class="nav-link" href="/contact-us"><i class="ri-phone-fill"></i> Contant Us</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" href="javascript:;" data-toggle="modal"
-                    data-target="#SignInModal"><i class="ri-user-3-fill"></i> Sign In</a>
-                </li>
-                </li>
               </ul>
               <!-- <div class="Navbar-btn">
                 <a
