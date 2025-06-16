@@ -64,6 +64,7 @@ Route::get('/vector-art', [FrontControllerController::class, 'fun_vectorart']);
 Route::get('/zeeindex', [FrontControllerController::class, 'zeeindex']);
 //Testing
 
+Route::get('/samples', [FrontControllerController::class, 'samples']);
 Route::get('/logo-digitizing', [FrontControllerController::class, 'logoDigitizing']);
 Route::get('/applique-digitizing', [FrontControllerController::class, 'appliqueDigitizing']);
 Route::get('/3d-puff-digitizing', [FrontControllerController::class, 'puffDigitizing']);

@@ -180,19 +180,12 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/embroidered-patches"><i class="fa-solid fa-tags"></i> Samples</a>
+                  <a class="nav-link" href="/samples"><i class="fa-solid fa-tags"></i> Samples</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/contact-us"><i class="ri-phone-fill"></i> Contant Us</a>
                 </li>
               </ul>
-              <!-- <div class="Navbar-btn">
-                <a
-                  href="#"
-                  class="btn btn-primary animate__animated animate__heartBeat animate__infinite animate__fast"
-                  >Get Qoutes</a
-                >
-              </div> -->
             </div>
           </div>
         </nav>
