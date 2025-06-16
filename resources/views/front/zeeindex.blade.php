@@ -1,14 +1,6 @@
 <script async src="https://www.google.com/recaptcha/api.js"></script>
-
-@extends('front/layout')
-
-
-
-@section('container')
-
-
-
-
+@extends('sitelayout/master')
+@section('content')
 
 <div class="HeaderContent">
 

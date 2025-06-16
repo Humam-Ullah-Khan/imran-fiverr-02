@@ -1,8 +1,6 @@
-@extends('front/layout')
+@extends('sitelayout/master')
 
-
-@section('container')
-
+@section('content')
 
 
 

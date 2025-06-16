@@ -309,7 +309,8 @@
         <div class="col-md-3">
           <div class="sample-img-wrap position-relative overflow-hidden rounded">
             <img src="{{ asset('sitelayout-images/sample-02.png') }}" alt="Sleeve Digitizing" class="img-fluid" />
-            <a href="/vector-art-digitizing" class="sample-img-overlay d-flex align-items-center justify-content-center">
+            <a href="/vector-art-digitizing"
+              class="sample-img-overlay d-flex align-items-center justify-content-center">
               <span class="fw-bold text-white fs-5">Vector Art Digitizing</span>
             </a>
             <div class="sample-title text-center fw-bold mt-2 d-md-none">
@@ -358,7 +359,8 @@
         <div class="col-md-3">
           <div class="sample-img-wrap position-relative overflow-hidden rounded">
             <img src="{{ asset('sitelayout-images/sample-06.png') }}" alt="Owl Jacket" class="img-fluid w-100" />
-            <a href="/jacket-back-digitizing" class="sample-img-overlay d-flex align-items-center justify-content-center">
+            <a href="/jacket-back-digitizing"
+              class="sample-img-overlay d-flex align-items-center justify-content-center">
               <span class="fw-bold text-white fs-5">Jacket Back</span>
             </a>
             <div class="sample-title text-center fw-bold mt-2 d-md-none">
@@ -382,7 +384,8 @@
         <div class="col-md-3">
           <div class="sample-img-wrap position-relative overflow-hidden rounded">
             <img src="{{ asset('sitelayout-images/sample-08.png') }}" alt="Hawks T-shirt" class="img-fluid w-100" />
-            <a href="/jacket-back-digitizing" class="sample-img-overlay d-flex align-items-center justify-content-center">
+            <a href="/jacket-back-digitizing"
+              class="sample-img-overlay d-flex align-items-center justify-content-center">
               <span class="fw-bold text-white fs-5">Hawks T-shirt</span>
             </a>
             <div class="sample-title text-center fw-bold mt-2 d-md-none">

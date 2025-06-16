@@ -1,7 +1,130 @@
-
 @extends('sitelayout/master')
+@section ('css')
+
+
+<style>
+  .BoxLayout a img {
+
+      width: 152px;
+
+  }
+
+
+
+  .BoxLayout i {
+
+      font-size: 4rem;
+
+      color: #07d443;
+
+  }
+
+
+
+  p.ordex {
+
+      color: green;
+
+  }
+
+
+
+  .applyCode .form-group {
+
+      position: relative;
+
+  }
+
+
+
+  .applyCode button {
+
+      position: absolute;
+
+      top: 32px;
+
+      right: 0;
+
+      display: flex;
+
+      align-items: center;
+
+      background: #d40707;
+
+      border-color: #d40707;
+
+  }
+
+
+
+  /* #checkout-button {
+
+                                  background: #96f;
+
+                                  color: white;
+
+                                  padding: 20px;
+
+                                  border-radius: 49px;
+
+                                  border: none;
+
+                                  margin-top: 5px;
+
+                                  width: 100%;
+
+                                  cursor: pointer;
+
+                                  font-size: 1em;
+
+                                  font-weight: 600;
+
+                                  transition: background 0.2s ease;
+
+                                  display: block;
+
+                                  text-align: center;
+
+                              } */
+
+
+
+  .container-custom {
+
+      background-color: #2d4739;
+
+      color: white;
+
+      padding: 20px;
+
+      border-radius: 10px;
+
+      height: 100%;
+
+  }
+
+
+
+  .order-section,
+
+  .payment-section {
+
+      background-color: #3a5745;
+
+      border-radius: 8px;
+
+      padding: 15px;
+
+      margin-bottom: 15px;
+
+  }
+</style>
+
+@endsection
+
 
 @section('content')
+
 
 @php
 
@@ -12,124 +135,6 @@ $OrdeData = App\Models\Assessment::where(['id' => $userid])->get();
 }
 
 @endphp
-
-<style>
-    .BoxLayout a img {
-
-        width: 152px;
-
-    }
-
-
-
-    .BoxLayout i {
-
-        font-size: 4rem;
-
-        color: #07d443;
-
-    }
-
-
-
-    p.ordex {
-
-        color: green;
-
-    }
-
-
-
-    .applyCode .form-group {
-
-        position: relative;
-
-    }
-
-
-
-    .applyCode button {
-
-        position: absolute;
-
-        top: 32px;
-
-        right: 0;
-
-        display: flex;
-
-        align-items: center;
-
-        background: #d40707;
-
-        border-color: #d40707;
-
-    }
-
-
-
-    /* #checkout-button {
-
-                                    background: #96f;
-
-                                    color: white;
-
-                                    padding: 20px;
-
-                                    border-radius: 49px;
-
-                                    border: none;
-
-                                    margin-top: 5px;
-
-                                    width: 100%;
-
-                                    cursor: pointer;
-
-                                    font-size: 1em;
-
-                                    font-weight: 600;
-
-                                    transition: background 0.2s ease;
-
-                                    display: block;
-
-                                    text-align: center;
-
-                                } */
-
-
-
-    .container-custom {
-
-        background-color: #2d4739;
-
-        color: white;
-
-        padding: 20px;
-
-        border-radius: 10px;
-
-        height: 100%;
-
-    }
-
-
-
-    .order-section,
-
-    .payment-section {
-
-        background-color: #3a5745;
-
-        border-radius: 8px;
-
-        padding: 15px;
-
-        margin-bottom: 15px;
-
-    }
-</style>
 
 <div class="BoxLayout pt-5 pb-5">
 
@@ -467,9 +472,9 @@ $OrdeData = App\Models\Assessment::where(['id' => $userid])->get();
 
 </div>
 
+@endsection
 
-
-
+@section ('scripts')
 
 <script src="https://js.stripe.com/v3/"></script>
 
