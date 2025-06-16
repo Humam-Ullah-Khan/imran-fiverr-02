@@ -150,7 +150,7 @@
 
     /* Select Styles */
     .form-select {
-      border: 2px solid #e9ecef;
+      border: 1.5px solid #e9ecef;
       border-radius: 8px;
       padding: 0.75rem 1rem;
       font-size: 1rem;
@@ -160,7 +160,7 @@
 
 
     .form-select:focus {
-      border-color: var(--Secondary);
+      border-color: var(--Secondary) !important;
       box-shadow: 0 0 0 0.2rem rgba(22, 82, 97, 0.15);
     }
 
