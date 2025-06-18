@@ -114,25 +114,25 @@
                     <div class="row">
                       <div class="col-md-3 col-6 mb-4">
                         <div class="gallery-item">
-                          <img src="{{ asset('sitelayout-images/sleeve-digitizing-01.png') }}"
+                          <img src="{{ asset('sitelayout-images/Sleeve-Digitizing-01.png') }}"
                             alt="Sleeve Digitizing Sample 1" class="img-fluid rounded shadow-sm">
                         </div>
                       </div>
                       <div class="col-md-3 col-6 mb-4">
                         <div class="gallery-item">
-                          <img src="{{ asset('sitelayout-images/sleeve-digitizing-02.png') }}"
+                          <img src="{{ asset('sitelayout-images/Sleeve-Digitizing-02.png') }}"
                             alt="Sleeve Digitizing Sample 2" class="img-fluid rounded shadow-sm">
                         </div>
                       </div>
                       <div class="col-md-3 col-6 mb-4">
                         <div class="gallery-item">
-                          <img src="{{ asset('sitelayout-images/sleeve-digitizing-03.png') }}"
+                          <img src="{{ asset('sitelayout-images/Sleeve-Digitizing-03.png') }}"
                             alt="Sleeve Digitizing Sample 3" class="img-fluid rounded shadow-sm">
                         </div>
                       </div>
                       <div class="col-md-3 col-6 mb-4">
                         <div class="gallery-item">
-                          <img src="{{ asset('sitelayout-images/sleeve-digitizing-04.png') }}"
+                          <img src="{{ asset('sitelayout-images/Sleeve-Digitizing-04.png') }}"
                             alt="Sleeve Digitizing Sample 4" class="img-fluid rounded shadow-sm">
                         </div>
                       </div>
