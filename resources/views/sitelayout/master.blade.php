@@ -7,6 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Embroidery Digitizing Services | Affordable & Reliable</title>
 
+  {{-- 
+    IMPORTANT: This layout uses Bootstrap 5.3.6 ONLY
+    Do not load Bootstrap 4.6.1 on pages using this layout
+    This prevents modal conflicts and ensures proper functionality
+  --}}
 
   <link rel="canonical" href="{{ url()->current() }}" />
   <!-- For ahrefs Analytics -->
@@ -26,12 +31,9 @@
   <link rel="stylesheet" href="{{ asset('sitelayout-css/styles.css') }}">
   <link rel="stylesheet" href="{{ asset('sitelayout-css/custom.css') }}">
 
-  <!-- Booststrap  -->
+  <!-- Bootstrap 5.3.6 CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
-
-  {{-- bootstrap --}}
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
   {{-- Font-Awesome --}}
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
@@ -47,6 +49,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+  {{-- Prevent Bootstrap 4.6.1 conflicts - ensure Bootstrap 5.3.6 takes precedence --}}
+  <style>
+    /* Override any Bootstrap 4.6.1 modal styles that might be loaded */
+    .modal-backdrop {
+      z-index: 1050 !important;
+    }
+
+    .modal {
+      z-index: 1055 !important;
+    }
+
+    /* Ensure Bootstrap 5.3.6 components work properly */
+    .btn-close {
+      background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+      border: 0;
+      border-radius: 0.375rem;
+      box-sizing: content-box;
+      width: 1em;
+      height: 1em;
+      padding: 0.25em 0.25em;
+      color: #000;
+      background-color: transparent;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
 
   @yield ('css')
 
@@ -107,7 +136,7 @@
                 <li><a href="/logout">Logout</a></li>
               @else
                 <li class="d-md-block d-none"><a class="btn btn-sm btn-success rounded-sm" href="javascript:;"
-                    data-toggle="modal" data-target="#SignInModal"><i
+                    data-bs-toggle="modal" data-bs-target="#SignInModal"><i
                       class="fa-solid fa-arrow-right-to-bracket mr-1"></i> Sign In</a></li>
               @endif
 
@@ -218,11 +247,7 @@
             </div>
           @endif
 
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-
-            <span aria-hidden="true">&times;</span>
-
-          </button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
         </div>
 
@@ -253,7 +278,7 @@
 
 
 
-            <div class="form-group">
+            <div class="form-group pt-3">
 
               <button type="button" class="btn btn-primary LoginAjax">Sign In</button>
 
@@ -279,9 +304,7 @@
 
           <h5 class="modal-title" id="exampleModalLabel">Forgot Password</h5>
 
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
         </div>
 
@@ -298,7 +321,7 @@
 
             </div>
 
-            <div class="form-group">
+            <div class="form-group pt-3">
               <button type="button" class="btn btn-primary ForgotnAjax">Send</button>
             </div>
 
@@ -465,7 +488,34 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  {{-- Bootstrap 5.3.6 Compatibility Layer - Prevent conflicts with Bootstrap 4.6.1 --}}
+  <script>
+    // Prevent Bootstrap 4.6.1 from interfering with Bootstrap 5.3.6
+    if (typeof $.fn.modal !== 'undefined') {
+      // Store Bootstrap 4.6.1 modal method
+      var oldModal = $.fn.modal;
+      // Override with Bootstrap 5.3.6 compatible method
+      $.fn.modal = function(option) {
+        if (option === 'show' || option === 'hide') {
+          var modalId = this.attr('id');
+          var modalElement = document.getElementById(modalId);
+          if (modalElement) {
+            var bsModal = new bootstrap.Modal(modalElement);
+            if (option === 'show') {
+              bsModal.show();
+            } else {
+              bsModal.hide();
+            }
+          }
+        }
+        return this;
+      };
+    }
+  </script>
+
+  <!-- Bootstrap 5.3.6 JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
   <script src="{{ asset('front_assets/js/input.js') }}"></script>
 
@@ -474,10 +524,6 @@
   <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-  <!-- Booststrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 
   @if (Session::has('messageForgot'))
     <script>
@@ -780,9 +826,13 @@
 
 
       $(document).on('click', '.ForgotPass', function() {
-        $("#ForgotModal").modal('show');
+        var forgotModal = new bootstrap.Modal(document.getElementById('ForgotModal'));
+        var signInModal = bootstrap.Modal.getInstance(document.getElementById('SignInModal'));
 
-        $("#SignInModal").modal('hide');
+        forgotModal.show();
+        if (signInModal) {
+          signInModal.hide();
+        }
       });
 
 
